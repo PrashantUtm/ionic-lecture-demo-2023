@@ -1,0 +1,7 @@
+{
+  "name": "lectureTwoApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
