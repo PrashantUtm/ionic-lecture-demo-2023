@@ -15,6 +15,6 @@ import { LectureOneLabelComponent } from '../components/lecture-one-label/lectur
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, LectureOneLabelComponent]
+  declarations: [HomePage]
 })
 export class HomePageModule {}
