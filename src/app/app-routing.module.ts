@@ -8,12 +8,16 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'forecasts',
     pathMatch: 'full'
   },
   {
     path: 'profile',
     loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'forecasts',
+    loadChildren: () => import('./pages/forecasts/forecasts.module').then( m => m.ForecastsPageModule)
   },
 ];
 
