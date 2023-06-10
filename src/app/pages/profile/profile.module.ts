@@ -8,6 +8,7 @@ import { ProfilePageRoutingModule } from './profile-routing.module';
 
 import { ProfilePage } from './profile.page';
 import { LectureOneLabelComponent } from 'src/app/components/lecture-one-label/lecture-one-label.component';
+import { ActivateAccountComponent } from 'src/app/components/activate-account/activate-account.component';
 
 @NgModule({
   imports: [
@@ -16,6 +17,6 @@ import { LectureOneLabelComponent } from 'src/app/components/lecture-one-label/l
     IonicModule,
     ProfilePageRoutingModule
   ],
-  declarations: [ProfilePage, LectureOneLabelComponent]
+  declarations: [ProfilePage, LectureOneLabelComponent, ActivateAccountComponent]
 })
 export class ProfilePageModule {}

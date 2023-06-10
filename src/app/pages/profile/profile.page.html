@@ -11,20 +11,58 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Card Title</ion-card-title>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Here's a small text description for the card content. Nothing more, nothing less.
-    </ion-card-content>
-  
-    <ion-button (click)="doSomeProcessing()">Do something</ion-button>
-    <ion-button fill="clear">Action 2</ion-button>
-
-    <app-lecture-one-label></app-lecture-one-label>
-  </ion-card>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Details</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <ion-avatar>
+              <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+            </ion-avatar>
+            <ion-list>
+              <ion-item>
+                <ion-radio-group value="male">
+                  <ion-item>
+                    <ion-label>Male</ion-label>
+                    <ion-radio slot="end" value="male"></ion-radio>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>Female</ion-label>
+                    <ion-radio slot="end" value="female"></ion-radio>
+                  </ion-item>
+                </ion-radio-group>
+              </ion-item>
+              <ion-item>
+                <ion-select aria-label="dietary" placeholder="Select dietary preferences">
+                  <ion-select-option value="vegetarian">Vegetarian</ion-select-option>
+                  <ion-select-option value="vegan">Vegan</ion-select-option>
+                  <ion-select-option value="nonveg">Non veg</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <ion-item>
+                <ion-toggle>Subscribe to weekly newsletter</ion-toggle>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Activate account</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <app-activate-account></app-activate-account>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

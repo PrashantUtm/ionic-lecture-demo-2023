@@ -8,14 +8,6 @@ import { Forecast } from 'src/app/models/forecast';
 })
 export class ForecastsPage implements OnInit {
 
-  public forecast: Forecast = {
-    id: 1,
-    date: new Date(),
-    region: 'Pointe aux Sables',
-    weather: 'Sunny',
-    rainfall: 0
-  };
-
   public forecastList: Forecast[] = [
     {
       id: 1,
